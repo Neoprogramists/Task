@@ -1,1 +1,12 @@
-
+subscription = 720000
+obsl = 300000
+period = 3
+training = 75000
+saving = 600000
+revenue_growth = 900000
+TCO = subscription * period + training
+Benefits = (savings + revenue_growth) * period
+ROI = ((Benefits - TCO) / TCO) * 100
+PP = TCO / (savings + revenue_growth)
+value_low = (savings + revenue_growth) * 0.8
+value_high = (savings + revenue_growth) * 1.2
