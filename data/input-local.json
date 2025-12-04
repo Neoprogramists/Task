@@ -1,9 +1,12 @@
-CAPEX = 
-OPEX = 
+CAPEX = 1000000
+OPEX = 300000
 Period = 3
+training = 150000
+saving = 600000
+revenue_growth = 900000
 TCO_local = CAPEX + OPEX * Period + training
 Benefits = (savings + revenue_growth) * period
 ROI = ((Benefits - TCO) / TCO) * 100
 PP = TCO / (savings + revenue_growth)
-value_low = 
-value_high
+value_low = (savings + revenue_growth) * 0.8
+value_high = (savings + revenue_growth) * 1.2
